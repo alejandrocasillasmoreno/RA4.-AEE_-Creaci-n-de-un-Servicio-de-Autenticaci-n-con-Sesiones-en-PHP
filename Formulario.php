@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Una pantalla de login que usaremos para autenticar a los usuarios">
+        <title>Pantalla de login</title>
+    </head>
+    <body>
+        <div class="container mt-4">
+            <main>
+                <h1>Formulario de Login</h1>
+                <form method="POST" action="autentificacion.php">
+                    <ul class="row list-unstyled">
+                        <li class="col-6 mb-3">
+                        <!-- Campo de usuario -->
+                            <label for="usuario">Usuario:</label>
+                            <input type="text" id="usuario" name="usuario" required><br>
+                        </li>
+                        <li class="col-6 mb-3">
+                            <!-- Campo de contraseña -->
+                            <label for="contrasena">Contraseña:</label>
+                            <input type="password" id="contrasena" name="contrasena" required><br>
+                        </li>
+                    </ul>
+                    <!-- Botón de envío -->
+                    <input type="submit" value="Iniciar sesión">
+                </form>
+            </main>
+        </div>
+    </body>
+</html>
